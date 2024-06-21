@@ -146,8 +146,8 @@ header h1 {
 
  .skill {
     font-family: Playfair Display;
-    font-size: 200%;
-    margin-top: 80px;
+    font-size: 5rem;
+    margin-top: 60px;
     margin-left: 600px; 
     color: rgb(255, 255, 255);
     position: absolute;
@@ -159,6 +159,7 @@ header h1 {
     padding: 1rem;
     margin-left: 600px;
     margin-top: 150px;
+    font-size: 2rem;
   }
 
   .description {
