@@ -28,8 +28,8 @@ body {
 
 .header {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 4rem 12%;
     background: rgba(0, 0, 0, 0.5);
@@ -73,7 +73,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 10rem 12%;
 }
 
 .home {
@@ -108,7 +108,7 @@ span {
 
 .home-content p {
     margin-bottom: 2rem;
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
     font-size: 2.5rem;
 }
 
@@ -133,6 +133,101 @@ span {
     transition: 0.4s ease-in-out;
 }
 
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg--color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg--color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+    0%,
+    20% {
+        content: "Programming ";
+    }
+    21%,
+    40% {
+        content: "Desing";
+    }
+    41%,
+    60% {
+        content: "Language";
+    }
+    61%,
+    80% {
+        content: "Teamwork";
+    }
+    81%,
+    100% {
+        content: "Nice to meet you!";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
 header {
     text-align: center;
     color: white;
@@ -142,39 +237,37 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
 }
-  
 
- .skill {
+.skill {
     font-family: Playfair Display;
     font-size: 5rem;
     margin-top: 40px;
     margin-left: 930px; 
     color: rgb(255, 255, 255);
     position: absolute;
- }
+}
 
- .stack {
+.stack {
     font-family: Playfair Display;
     font-size: 5rem;
     margin-top: 40px;
     margin-left: 420px; 
     color: rgb(255, 255, 255);
     position: absolute;
- }
+}
 
- .skill-container {
+.skill-container {
     border: solid tan;
     width: 500px;
     padding: 1rem;
     margin-left: 800px;
     margin-top: 130px;
     font-size: 2rem;
-  }
+}
 
-  .description {
+.description {
     font-size: 3rem; 
     line-height: 2.4rem; 
     margin-bottom: 2rem; 
 }
-
   
